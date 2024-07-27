@@ -1,12 +1,15 @@
 import React from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
+const UNITY_PATH = "unity/Build";
+const UNITY_NAME = "unity";
+
 function App() {
   const { unityProvider } = useUnityContext({
-    loaderUrl: "build/myunityapp.loader.js",
-    dataUrl: "build/myunityapp.data",
-    frameworkUrl: "build/myunityapp.framework.js",
-    codeUrl: "build/myunityapp.wasm",
+    loaderUrl: `${UNITY_PATH}/${UNITY_NAME}.loader.js`,
+    dataUrl: `${UNITY_PATH}/${UNITY_NAME}.data`,
+    frameworkUrl: `${UNITY_PATH}/${UNITY_NAME}.framework.js`,
+    codeUrl: `${UNITY_PATH}/${UNITY_NAME}.wasm`,
   });
 
   return (
@@ -14,4 +17,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
