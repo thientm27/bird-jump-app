@@ -2,12 +2,13 @@ import React from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import './App.css';
 import logo from "./Assets/logo.png"; 
+import { Console } from "console";
 
 const UNITY_PATH = "unity/Build";
-const UNITY_NAME = "flying-baby-dragon-webgl-deploy-test";
+const UNITY_NAME = "unity";
 
 function App() {
-  const { unityProvider, isLoaded, loadingProgression } = useUnityContext({
+  const { unityProvider, sendMessage ,isLoaded, loadingProgression } = useUnityContext({
     loaderUrl: `${UNITY_PATH}/${UNITY_NAME}.loader.js`,
     dataUrl: `${UNITY_PATH}/${UNITY_NAME}.data`,
     frameworkUrl: `${UNITY_PATH}/${UNITY_NAME}.framework.js`,
@@ -15,6 +16,14 @@ function App() {
   });
 
   const loadingPercentage = Math.round(loadingProgression * 100);
+  function handleClickRed() {
+    console.log("Clicked")
+    sendMessage("@Controller", "ChangeColorRed");
+  }
+  function handleClickWhite() {
+    console.log("Clicked")
+    sendMessage("@Controller", "ChangeColorWhite");
+  }
 
   return (
     <div id="unity-container" className="unity-desktop">
@@ -30,6 +39,8 @@ function App() {
         </div>
       )}
       <Unity className="unity" unityProvider={unityProvider} />
+      <button onClick={handleClickRed}>Red</button>
+      <button onClick={handleClickWhite}>White</button>
     </div>
   );
 }
