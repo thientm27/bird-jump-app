@@ -5,9 +5,9 @@ const Ton: React.FC = () => {
 
   return (
     
-        <TonConnectUIProvider manifestUrl="#"   actionsConfiguration={{
-            twaReturnUrl: 'https://t.me/thientm_denk'
-        }}>
+        <TonConnectUIProvider manifestUrl="https://raw.githubusercontent.com/thientm27/bird-jump-app/main/tonconnect-manifest.json" 
+            //actionsConfiguration={{twaReturnUrl: 'https://t.me/thientm_denk'}}
+        >
             
         <header>
             <span>My App with React UI</span>
