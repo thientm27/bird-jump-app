@@ -1,6 +1,7 @@
 {
   "name": "bird-jump-app",
   "version": "0.1.0",
+  "homepage": "https://thientm27.github.io/bird-jump-app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
