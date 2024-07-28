@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/bird-jump-app/static/css/main.f5c723d6.css",
-    "main.js": "/bird-jump-app/static/js/main.2bf419af.js",
+    "main.js": "/bird-jump-app/static/js/main.ff8fff2d.js",
     "static/js/453.88602113.chunk.js": "/bird-jump-app/static/js/453.88602113.chunk.js",
     "static/media/logo.png": "/bird-jump-app/static/media/logo.8f628b5baea8c0c4de9b.png",
     "index.html": "/bird-jump-app/index.html",
     "main.f5c723d6.css.map": "/bird-jump-app/static/css/main.f5c723d6.css.map",
-    "main.2bf419af.js.map": "/bird-jump-app/static/js/main.2bf419af.js.map",
+    "main.ff8fff2d.js.map": "/bird-jump-app/static/js/main.ff8fff2d.js.map",
     "453.88602113.chunk.js.map": "/bird-jump-app/static/js/453.88602113.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5c723d6.css",
-    "static/js/main.2bf419af.js"
+    "static/js/main.ff8fff2d.js"
   ]
 }
