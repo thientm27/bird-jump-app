@@ -1,12 +1,12 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
-import './App.css';
-import logo from "./Assets/logo.png";
+import './Game.css';
+import logo from "../../Assets/logo.png";
 
 const UNITY_PATH = "unity/Build";
 const UNITY_NAME = "unity";
 
-const App: React.FC = () => {
+const Game: React.FC = () => {
   const [userName, setUserName] = useState<string | undefined>(undefined);
   const [score, setScore] = useState<number | undefined>(undefined);
 
@@ -66,4 +66,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Game;
