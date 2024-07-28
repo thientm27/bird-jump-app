@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Game from './Page/Game/Game';
 import App from './App';
 import Ton from './Page/Ton/Ton';
-import Game from './Page/Game/Game';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -11,7 +12,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Ton />
+    <App />
   </React.StrictMode>
 );
 

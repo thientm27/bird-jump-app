@@ -1,21 +1,20 @@
-import React, { } from "react";
-import { TonConnectButton, TonConnectUIProvider } from '@tonconnect/ui-react';
-
+import React from "react";
+import { TonConnectButton, useTonWallet } from '@tonconnect/ui-react';
+import { Navigate} from "react-router-dom";
 const Ton: React.FC = () => {
+    const wallet = useTonWallet();
 
-  return (
+    if (wallet) {
+        return (
+            <Navigate to="/game" />
+       
+        );
+    }
     
-        <TonConnectUIProvider manifestUrl="https://raw.githubusercontent.com/thientm27/bird-jump-app/main/tonconnect-manifest.json" 
-        actionsConfiguration={{twaReturnUrl: 'https://t.me/thientm_bot/birdjump'}}>
-            
-        <header>
-            <span>My App with React UI</span>
-            <TonConnectButton className="my-button-class" style={{ float: "right" }}/>
-        </header>
-        <div>t.me/thientm_bot/birdjump 2</div>
-        <div>My app</div>
-         
-        </TonConnectUIProvider> 
+    return (
+        <div style={{ display: "flex", justifyContent: "center" }}>
+            <TonConnectButton className="my-button-class" />
+        </div>
     );
 };
 
