@@ -12,9 +12,15 @@ const Ton: React.FC = () => {
     }
     
     return (
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div>HIIIIIIII
+
+
+<div style={{ display: "flex", justifyContent: "center" }}>
             <TonConnectButton className="my-button-class" />
+            
         </div>
+        </div>
+
     );
 };
 
